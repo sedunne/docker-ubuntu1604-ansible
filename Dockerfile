@@ -13,7 +13,7 @@ RUN apt-get update \
 RUN add-apt-repository -y ppa:ansible/ansible \
   && apt-get update \
   && apt-get install -y \
-     ansible python-pip \
+     ansible python-pip git \
   && pip install ansible-lint \
   && rm -rf /var/lib/apt/lists/* \
   && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
